@@ -6,7 +6,7 @@ from wtforms.validators import DataRequired, Length, Regexp
 class Information(FlaskForm):
     tests = StringField('Total tests: ',
                         validators=[DataRequired(), Length(1, 5),
-                                    Regexp('^[A-Za-z_1-9]{1,}$')])
+                                    Regexp('^[A-Za-z_1-3]{1,}$')])
     phoneModel = StringField('Phone Model: ',
                              validators=[DataRequired(), Length(3, 80),
                                          Regexp('^[A-Za-z_1-9]{3,}$')])

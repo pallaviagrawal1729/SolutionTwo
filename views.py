@@ -11,14 +11,8 @@ app.config['SECRET_KEY'] = b'\x9e\x8d\x9a\x91\ts\x0b\xa8\x17\x01\xffe\\\xc4\xf1\
 def welcome():
     form = Information()
     if form.validate_on_submit():
-        tests = form.tests.data
-        phoneModel = form.phoneModel.data
-        phoneOS = form.phoneOS.data
-        device = form.device.data
-        FirmwareVersion = form.firmwareVersion.data
-        return render_template("generateTable.html",form=form)
+        return render_template("generateTable.html", form=form)
     return render_template("firstPage.html", form=form)
-
 
 # @app.route("/testReport", methods=['GET'])
 # def report(form):
