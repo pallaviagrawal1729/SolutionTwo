@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+{% from "form_macro.html" import render_field %}
+
+{% block title %}
+Fill Details
+{% endblock %}
+
+{% block content %}
+<form action="" method="post">
+        {{ form.hidden_tag() }}
+        <table>
+                {{ render_field(form.tests, size=50) }}
+                {{ render_field(form.phoneModel, size=50) }}
+                {{ render_field(form.phoneOS, size=50) }}
+                {{ render_field(form.device, size=50) }}
+                {{ render_field(form.firmwareVersion, size=50) }}
+                {{render_field(form.submit)}}
+        </table>
+</form>
+{% endblock %}
