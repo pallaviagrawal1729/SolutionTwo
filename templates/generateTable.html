@@ -12,7 +12,7 @@ TestReport
         <p>*******************************************************</p>
     </div>
     <div>
-        <p>Total tests<strong> : 3</strong></p>
+        <p><strong>Total tests</strong> : {{ form.tests.data }}</p>
     </div>
     <div>
         <h1>Phone Information :</h1>
@@ -21,10 +21,10 @@ TestReport
         <p>*******************************************************</p>
     </div>
     <div>
-        <p><strong>Phone Model</strong> : Samsung Galaxy S4</p>
+        <p><strong>Phone Model</strong> : {{ form.phoneModel.data }}</p>
     </div>
     <div>
-        <p><strong>Phone OS</strong>: Android 9</p>
+        <p><strong>Phone OS</strong>: {{ form.phoneOS.data }}</p>
     </div>
     <div>
         <p>&nbsp;</p>
@@ -36,8 +36,8 @@ TestReport
         <p>*******************************************************</p>
     </div>
     <div>
-        <p><strong>Device</strong> : BlueNRG-2</p>
-        <p><strong>Firmware ver</strong> : 21</p>
+        <p><strong>Device</strong> : {{ form.device.data }}</p>
+        <p><strong>Firmware ver</strong> : {{ form.firmwareVersion.data }}</p>
     </div>
     <div>&nbsp;</div>
     <div>
